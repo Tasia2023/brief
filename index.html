@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Бриф для подготовки предложения по разработке многоязычного сайта-каталога бетонных изделий.">
+<title>Проект начинается с диалога — бриф от Аны</title>
+<style>
+:root{
+ --ink:#292b29;--muted:#74766f;--olive:#626b58;--olive-dark:#41483d;
+ --paper:#e9e7df;--surface:#f8f8f4;--white:#fffefa;--line:#e3e3dc;
+ --sand:#d8d5c9;--accent:#929987;--soft:#f0f0ea;--shadow:0 22px 60px rgba(42,47,39,.09);
+ --font:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font:15px/1.7 var(--font);
+ background:
+ radial-gradient(ellipse at 8% 5%,rgba(255,255,255,.72),transparent 34%),
+ radial-gradient(ellipse at 92% 18%,rgba(193,177,155,.24),transparent 30%),
+ linear-gradient(135deg,#e8e3d9,#f0ede6 48%,#e4ded3);
+}
+.hero{padding:26px 22px 30px;background:transparent;color:var(--ink)}
+.hero-inner{max-width:1160px;margin:auto}
+.topbar{height:58px;padding:8px 12px 8px 18px;border:1px solid rgba(255,255,255,.76);
+ border-radius:999px;background:rgba(255,254,250,.76);backdrop-filter:blur(16px);
+ display:flex;align-items:center;justify-content:space-between;gap:18px;box-shadow:0 8px 28px rgba(55,48,38,.06)}
+.brand{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap}
+.brand span{display:block;font-size:8px;letter-spacing:.24em;color:var(--muted);font-weight:600;margin-top:1px}
+.navlinks{display:flex;gap:25px;align-items:center;font-size:12px;color:#5e5a53}
+.navlinks a{color:inherit;text-decoration:none}
+.navlinks a:hover{color:#171713}
+.top-contact{background:#34362f;color:white;text-decoration:none;border-radius:999px;padding:10px 17px;font-size:11px;white-space:nowrap}
+.hero-grid{margin-top:28px;min-height:320px;border-radius:26px;overflow:hidden;position:relative;
+ background:linear-gradient(115deg,#fbfbf8 0%,#f1f2ec 58%,#e5e8df 100%);
+ border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);display:grid;grid-template-columns:1.15fr .85fr}
+.hero-copy{padding:48px 5.5% 42px;position:relative;z-index:1}
+.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:#837866;font-weight:700}
+h1{font-family:var(--font);font-weight:650;font-size:clamp(39px,5.1vw,62px);line-height:1.04;letter-spacing:-.055em;margin:22px 0 18px;max-width:650px}
+h1 em{font-style:normal;font-weight:650;color:#68745f}
+.hero-copy p{max-width:500px;color:#68645c;font-size:15px;margin:0}
+.hero-meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:27px}
+.meta-pill{border:1px solid #d9d1c5;border-radius:99px;padding:8px 13px;font-size:10px;letter-spacing:.04em;color:#5e5a52;background:rgba(255,255,255,.45)}
+.hero-visual{position:relative;min-height:300px;display:flex;align-items:center;justify-content:center;padding:28px 34px 28px 0}
+.visual-card{width:min(100%,390px);height:270px;border-radius:20px;position:relative;
+ background:linear-gradient(145deg,#f8f9f5,#e6e9e0);border:1px solid rgba(255,255,255,.95);
+ box-shadow:0 18px 45px rgba(48,54,43,.10);overflow:hidden}
+.project-card{padding:22px 24px;display:flex;flex-direction:column;justify-content:space-between}
+.project-card-top{display:flex;justify-content:space-between;align-items:center;color:#74796e;font-size:10px;font-weight:700;letter-spacing:.13em}
+.project-card-top span:last-child{font-weight:500;letter-spacing:.08em;color:#969a90}
+.catalog-scene{height:145px;display:flex;align-items:flex-end;justify-content:center;gap:15px;padding:0 14px 8px;position:relative}
+.catalog-scene:before{content:"";position:absolute;left:4%;right:4%;bottom:7px;height:1px;background:#c9cec2}
+.object{position:relative;z-index:1;background:linear-gradient(135deg,#d8d9d0,#aeb3a7);box-shadow:inset -9px -3px 16px rgba(75,81,69,.12),0 9px 14px rgba(55,61,50,.10)}
+.object-one{width:66px;height:91px;border-radius:7px 7px 4px 4px;clip-path:polygon(12% 0,88% 0,100% 100%,0 100%)}
+.object-two{width:82px;height:57px;border-radius:8px 8px 3px 3px;background:linear-gradient(135deg,#e0dfd7,#b8b9ae)}
+.object-three{width:56px;height:112px;border-radius:3px 3px 7px 7px;background:linear-gradient(135deg,#c8cbc1,#979e91);clip-path:polygon(8% 0,92% 0,100% 100%,0 100%)}
+.project-card-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#73796e;font-size:9px;font-weight:700;letter-spacing:.1em}
+.project-card-bottom span{white-space:nowrap}
+
+
+main{max-width:1000px;margin:0 auto;padding:0 20px 65px}
+.intro,.section,.end{background:rgba(255,254,250,.94);border:1px solid rgba(255,255,255,.9);border-radius:21px;
+ padding:29px 32px;margin-bottom:17px;box-shadow:0 9px 35px rgba(54,47,37,.055)}
+.intro{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}
+.intro-copy p{margin:0 0 12px}.intro-copy p:last-child{margin-bottom:0}
+.intro-aside{width:150px;text-align:center}
+.intro-aside img{width:112px;height:112px;border-radius:50%;object-fit:cover;object-position:center 27%;border:5px solid #f0ebe2;box-shadow:0 8px 24px rgba(53,46,37,.13)}
+.intro-aside strong{display:block;font-family:var(--font);font-size:16px;font-weight:650;margin-top:9px}
+.intro-aside small{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.signature{font-weight:700;color:var(--olive);margin-top:16px!important}
+.section{scroll-margin-top:20px}
+.section-title{display:flex;align-items:center;gap:14px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.number{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:#eae4d9;color:#655944;font-size:12px;font-weight:800;flex:0 0 36px}
+h2{font-family:var(--font);font-size:21px;line-height:1.3;font-weight:650;letter-spacing:-.025em;margin:0}
+.field{margin-top:19px}
+.question{display:block;font-weight:650;margin-bottom:8px;font-size:14px;color:#35342f}
+.hint{font-size:12px;color:var(--muted);margin:-3px 0 9px}
+input[type=text],input[type=url],textarea,select{width:100%;border:1px solid #dcd5ca;border-radius:11px;padding:12px 14px;background:#fffefa;color:var(--ink);font:inherit;outline:none;transition:border .18s,box-shadow .18s}
+textarea{min-height:78px;resize:vertical}
+input::placeholder,textarea::placeholder{color:#aaa398}
+input:focus,textarea:focus,select:focus{border-color:#99866b;box-shadow:0 0 0 3px rgba(153,134,107,.13)}
+.choices{display:flex;flex-wrap:wrap;gap:9px}
+.choice{display:flex;align-items:center;gap:8px;border:1px solid #e3ddd3;border-radius:999px;padding:9px 13px;background:#fbfaf6;font-size:13px;color:#514d45;transition:all .18s}
+.choice:hover{border-color:#b6a58e;background:#f4f0e8}
+.choice input{accent-color:#6b6a58}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:21px}
+button{border:0;border-radius:999px;padding:13px 20px;font:inherit;font-weight:650;cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s}
+button:hover{transform:translateY(-1px)}
+.primary{background:#383a32;color:white;box-shadow:0 7px 18px rgba(49,49,41,.15)}
+.primary:hover{background:#24261f}
+.secondary{background:#eee9df;color:#49453c}
+.small{font-size:12px;color:var(--muted);margin:13px 0 0}
+.end{background:linear-gradient(125deg,#fdfbf6,#ece6db)}
+.end h2{font-size:25px;margin-bottom:10px}
+.end p{max-width:700px}
+footer{text-align:center;color:#817b70;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:4px 0 0}
+@media(max-width:760px){
+ .hero{padding:14px 12px 20px}.topbar{height:auto;border-radius:18px;padding:12px 14px}.navlinks{display:none}
+ .hero-grid{grid-template-columns:1fr;margin-top:13px}.hero-copy{padding:33px 25px 12px}
+ h1{font-size:clamp(42px,11vw,58px);margin:17px 0 13px}
+ .hero-visual{min-height:225px;padding:8px 25px 25px;justify-content:flex-end}
+ .visual-card{width:250px;height:205px;margin-right:4px}.project-card{padding:17px 18px}.catalog-scene{height:115px;gap:10px}.object-one{height:72px;width:54px}.object-two{height:47px;width:67px}.object-three{height:88px;width:46px}.project-card-bottom{font-size:8px}
+ main{padding:0 12px 40px}
+ .intro,.section,.end{padding:22px 19px;border-radius:17px}
+ .intro{grid-template-columns:1fr auto;gap:12px}
+ .intro-aside{width:90px}.intro-aside img{width:76px;height:76px}.intro-aside strong{font-size:16px}
+ h2{font-size:22px}
+ .choice{border-radius:12px;width:100%}
+}
+@media(max-width:430px){
+ .intro{grid-template-columns:1fr}.intro-aside{display:flex;align-items:center;gap:12px;width:auto;text-align:left;margin-top:6px}
+ .intro-aside img{width:62px;height:62px}.intro-aside strong{margin:0}.intro-aside small{display:block}
+ .hero-meta{gap:7px}.meta-pill{font-size:9px}
+ .actions button{width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+@media print{
+ body{background:#fff}.hero{padding:12px}.topbar{display:none}.hero-grid{box-shadow:none;min-height:0}
+ .hero-copy{padding:20px}.hero-visual{display:none}main{padding:10px}
+ .intro,.section,.end{box-shadow:none;break-inside:avoid;border:1px solid #ddd}
+ .actions{display:none}input,textarea,select{border:0;border-bottom:1px solid #aaa;border-radius:0}
+ .choice{border:0;padding-left:0}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <nav class="topbar" aria-label="Основная навигация">
+   <div class="brand">ANA STUDIO<span>WEB · DATA · DIGITAL</span></div>
+   <div class="navlinks"><a href="#about">Обо мне</a><a href="#brief">Бриф</a><a href="#contacts">Следующий шаг</a></div>
+   <a class="top-contact" href="#brief">Заполнить бриф ↗</a>
+  </nav>
+  <div class="hero-grid">
+   <div class="hero-copy">
+    <div class="eyebrow">Веб-разработка · цифровые решения · аналитика</div>
+    <h1>Ваш проект.<br><em>Продуманное</em> решение.</h1>
+    <p>Начнём с понимания ваших задач — и превратим идеи в удобный, функциональный и визуально цельный сайт.</p>
+    <div class="hero-meta"><span class="meta-pill">01 / Знакомство с проектом</span><span class="meta-pill">02 / Функциональность</span><span class="meta-pill">03 / Оценка сроков</span></div>
+   </div>
+   <div class="hero-visual">
+    <div class="visual-card project-card" aria-label="Подход к разработке проекта">
+     <div class="project-card-top"><span>ANA STUDIO</span><span>01 — 03</span></div>
+     <div class="catalog-scene" aria-hidden="true"><span class="object object-one"></span><span class="object object-two"></span><span class="object object-three"></span></div>
+     <div class="project-card-bottom"><span>ФОРМА</span><span>МАТЕРИАЛ</span><span>ДЕТАЛИ</span></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</header>
+<main>
+<section class="intro" id="about"><div class="intro-copy">
+ <p>Добрый день!</p>
+ <p>Меня зовут Ана. Я занимаюсь разработкой веб-сайтов и цифровых решений, а также работой с данными: структурированием информации, базами данных, SQL и аналитикой.</p>
+ <p>В проектах я уделяю особое внимание не только внешнему виду сайта, но и удобству его использования, логичной организации информации и возможности самостоятельно управлять содержимым.</p>
+ <p>Спасибо за подробное описание вашего проекта! Создание такого сайта-каталога вполне возможно. Чтобы лучше понять ваши пожелания, определить необходимый функционал и подготовить предложение с оценкой сроков и стоимости, предлагаю заполнить небольшой бриф.</p>
+ <p>Пожалуйста, ответьте на вопросы ниже. Если пока нет точного ответа, можно написать «пока не определились».</p>
+ <p class="signature">Буду рада сотрудничеству!<br>Ана</p>
+</div><aside class="intro-aside"><img src="ana.jpg" alt="Ана" onerror="this.style.display='none'"><div><strong>Ана</strong><small>Ваш контакт по проекту</small></div></aside></section>
+
+<form id="brief">
+<section class="section">
+ <div class="section-title"><span class="number">1</span><h2>Информация о компании</h2></div>
+ <div class="field"><label class="question" for="company">Как называется ваша компания?</label><input id="company" name="Название компании" type="text" placeholder="Название компании"></div>
+ <div class="field"><label class="question" for="links">Есть ли действующий сайт или страницы в социальных сетях?</label><textarea id="links" name="Сайт и социальные сети" placeholder="Укажите ссылки, если есть"></textarea></div>
+ <div class="field"><span class="question">Есть ли логотип и фирменный стиль компании?</span><div class="choices">
+  <label class="choice"><input type="radio" name="Логотип и фирменный стиль" value="Да, есть"> Да, есть</label>
+  <label class="choice"><input type="radio" name="Логотип и фирменный стиль" value="Есть только логотип"> Есть только логотип</label>
+  <label class="choice"><input type="radio" name="Логотип и фирменный стиль" value="Нет"> Нет</label>
+  <label class="choice"><input type="radio" name="Логотип и фирменный стиль" value="Пока не определились"> Пока не определились</label>
+ </div>
+ <div class="field"><label class="question" for="brandNotes">Хотите что-нибудь уточнить по поводу логотипа или фирменного стиля?</label><input id="brandNotes" name="Комментарий о логотипе и фирменном стиле" type="text" placeholder="Напишите свой ответ"></div>
+ </div>
+</section>
+
+<section class="section">
+ <div class="section-title"><span class="number">2</span><h2>Каталог продукции</h2></div>
+ <div class="field"><label class="question" for="count">Сколько примерно изделий планируется разместить на сайте?</label><select id="count" name="Количество изделий"><option value="">Выберите вариант</option><option>До 50</option><option>50–150</option><option>150–300</option><option>Более 300</option><option>Пока неизвестно</option></select></div>
+ <div class="field"><label class="question" for="categories">На какие основные категории будет разделён каталог?</label><p class="hint">Например: скульптуры, фонтаны, вазоны и другие изделия.</p><textarea id="categories" name="Категории каталога" placeholder="Перечислите категории"></textarea></div>
+ <div class="field"><label class="question" for="details">Какие характеристики необходимо отображать для каждого изделия?</label><p class="hint">Например: размеры, вес, материал, цена и другие параметры.</p><textarea id="details" name="Характеристики изделий" placeholder="Перечислите характеристики"></textarea></div>
+ <div class="field"><span class="question">Все ли изделия имеют фиксированную цену или для некоторых требуется индивидуальный расчёт?</span><div class="choices">
+  <label class="choice"><input type="radio" name="Цены" value="Фиксированная цена для всех изделий"> Фиксированная цена</label>
+  <label class="choice"><input type="radio" name="Цены" value="Индивидуальный расчёт"> Индивидуальный расчёт</label>
+  <label class="choice"><input type="radio" name="Цены" value="Оба варианта"> Оба варианта</label>
+  <label class="choice"><input type="radio" name="Цены" value="Цены пока не определены"> Пока не определены</label>
+ </div></div>
+</section>
+
+<section class="section">
+ <div class="section-title"><span class="number">3</span><h2>Языковые версии</h2></div>
+ <div class="field"><label class="question" for="languages">На каких языках должен быть доступен сайт?</label><input id="languages" name="Языки сайта" type="text" placeholder="Например: литовский, русский, английский"></div>
+ <div class="field"><span class="question">Есть ли уже готовые переводы описаний продукции или их потребуется подготовить?</span><div class="choices">
+  <label class="choice"><input type="radio" name="Переводы" value="Готовы все переводы"> Все переводы готовы</label>
+  <label class="choice"><input type="radio" name="Переводы" value="Готовы частично"> Готовы частично</label>
+  <label class="choice"><input type="radio" name="Переводы" value="Нужно подготовить переводы"> Переводы нужно подготовить</label>
+  <label class="choice"><input type="radio" name="Переводы" value="Пока неизвестно"> Пока неизвестно</label>
+ </div></div>
+</section>
+
+<section class="section">
+ <div class="section-title"><span class="number">4</span><h2>Фотографии и 3D-визуализация</h2></div>
+ <div class="field"><span class="question">Есть ли у вас готовые фотографии всех изделий?</span><div class="choices">
+  <label class="choice"><input type="radio" name="Фотографии" value="Да, всех изделий"> Да, всех изделий</label>
+  <label class="choice"><input type="radio" name="Фотографии" value="Только части изделий"> Только части изделий</label>
+  <label class="choice"><input type="radio" name="Фотографии" value="Фотографий пока нет"> Пока нет</label>
+ </div></div>
+ <div class="field"><span class="question">Имеются ли готовые 3D-модели продукции или их необходимо будет создавать?</span><div class="choices">
+  <label class="choice"><input type="radio" name="3D-модели" value="Да, готовые модели есть"> Готовые модели есть</label>
+  <label class="choice"><input type="radio" name="3D-модели" value="Есть модели некоторых изделий"> Есть для некоторых изделий</label>
+  <label class="choice"><input type="radio" name="3D-модели" value="Модели нужно создавать"> Нужно создавать</label>
+  <label class="choice"><input type="radio" name="3D-модели" value="Нужно уточнить"> Нужно уточнить</label>
+ </div></div>
+ <div class="field"><span class="question">Правильно ли мы понимаем, что вы хотите, чтобы посетители могли вращать 3D-модель изделия на сайте и рассматривать её со всех сторон?</span><div class="choices">
+  <label class="choice"><input type="radio" name="Просмотр 3D" value="Да, именно такой просмотр"> Да, именно так</label>
+  <label class="choice"><input type="radio" name="Просмотр 3D" value="Хотим обсудить возможные варианты"> Хотим обсудить варианты</label>
+  <label class="choice"><input type="radio" name="Просмотр 3D" value="Нет, достаточно фотографий"> Нет, достаточно фотографий</label>
+ </div></div>
+</section>
+
+<section class="section">
+ <div class="section-title"><span class="number">5</span><h2>Функциональность сайта</h2></div>
+ <div class="field"><span class="question">Должна ли быть возможность самостоятельно добавлять новые изделия, редактировать описания, фотографии и цены?</span><div class="choices">
+  <label class="choice"><input type="radio" name="Управление каталогом" value="Да, самостоятельно"> Да</label>
+  <label class="choice"><input type="radio" name="Управление каталогом" value="Нет, через разработчика"> Нет, через разработчика</label>
+  <label class="choice"><input type="radio" name="Управление каталогом" value="Пока не определились"> Пока не определились</label>
+ </div></div>
+ <div class="field"><span class="question">Нужны ли фильтры для поиска продукции? Например, по категориям, размерам, стоимости или материалу. Можно отметить варианты ниже или указать свои.</span><div class="choices">
+  <label class="choice"><input type="checkbox" name="Фильтры" value="По категориям"> По категориям</label>
+  <label class="choice"><input type="checkbox" name="Фильтры" value="По размерам"> По размерам</label>
+  <label class="choice"><input type="checkbox" name="Фильтры" value="По стоимости"> По стоимости</label>
+  <label class="choice"><input type="checkbox" name="Фильтры" value="Другие фильтры"> Другие</label>
+  <label class="choice"><input type="checkbox" name="Фильтры" value="Фильтры не нужны"> Не нужны</label>
+ </div>
+ <div class="field"><label class="question" for="filterNotes">Какие ещё фильтры или параметры поиска вы хотели бы добавить?</label><input id="filterNotes" name="Другие фильтры и параметры поиска" type="text" placeholder="Напишите свой вариант"></div>
+ </div>
+ <div class="field"><span class="question">Нужна ли форма обратной связи или кнопка для отправки запроса о стоимости конкретного изделия?</span><div class="choices">
+  <label class="choice"><input type="checkbox" name="Обратная связь" value="Форма обратной связи"> Форма обратной связи</label>
+  <label class="choice"><input type="checkbox" name="Обратная связь" value="Запрос стоимости из карточки изделия"> Запрос стоимости из карточки изделия</label>
+  <label class="choice"><input type="checkbox" name="Обратная связь" value="Телефон и электронная почта"> Телефон и email</label>
+  <label class="choice"><input type="checkbox" name="Обратная связь" value="Мессенджеры"> Мессенджеры</label>
+ </div></div>
+</section>
+
+<section class="section">
+ <div class="section-title"><span class="number">6</span><h2>Дизайн и примеры</h2></div>
+ <div class="field"><label class="question" for="examples">Есть ли сайты других компаний, дизайн или структура которых вам нравятся? Если да, можете прислать ссылки.</label><textarea id="examples" name="Примеры сайтов" placeholder="Добавьте ссылки на сайты и комментарии"></textarea></div>
+ <div class="field"><span class="question">Какой стиль сайта вам ближе?</span><div class="choices">
+  <label class="choice"><input type="checkbox" name="Предпочтительный стиль" value="Современный минимализм"> Современный минимализм</label>
+  <label class="choice"><input type="checkbox" name="Предпочтительный стиль" value="Классический"> Классический</label>
+  <label class="choice"><input type="checkbox" name="Предпочтительный стиль" value="Премиальный"> Премиальный</label>
+  <label class="choice"><input type="checkbox" name="Предпочтительный стиль" value="Другой стиль"> Другой</label>
+  <label class="choice"><input type="checkbox" name="Предпочтительный стиль" value="Нужна рекомендация"> Нужна рекомендация</label>
+ </div></div>
+ <div class="field"><label class="question" for="vision">Будем благодарны, если вы поделитесь своими пожеланиями и видением будущего сайта.</label><textarea id="vision" name="Пожелания и видение" placeholder="Опишите ваши идеи"></textarea></div>
+</section>
+
+<section class="section">
+ <div class="section-title"><span class="number">7</span><h2>Сроки</h2></div>
+ <div class="field"><label class="question" for="deadline">Есть ли желаемая дата запуска сайта?</label><input id="deadline" name="Желаемая дата запуска" type="text" placeholder="Укажите дату или примерный период"></div>
+</section>
+
+<section class="end" id="contacts">
+ <h2>Спасибо за ваши ответы!</h2>
+ <p>После получения заполненного брифа я смогу определить оптимальное техническое решение, оценить объём работ и подготовить для вас коммерческое предложение с ориентировочными сроками и стоимостью разработки.</p>
+ <p class="signature">Буду рада сотрудничеству!<br>С уважением, Ана</p>
+ <div class="actions">
+  <button class="primary" type="button" onclick="downloadAnswers()">Скачать ответы (.txt)</button>
+  <button class="secondary" type="button" onclick="saveAsPDF()">Сохранить заполненный бриф в PDF</button>
+ </div>
+ <p class="small" id="downloadStatus" role="status" aria-live="polite">Ответы не отправляются автоматически. Сохраните заполненный бриф и отправьте файл Ане.</p>
+</section>
+</form>
+<footer>Бриф на разработку сайта-каталога · Ана</footer>
+</main>
+<script>
+function setDownloadStatus(message){
+ const status=document.getElementById('downloadStatus');
+ if(status) status.textContent=message;
+}
+function collectAnswers(){
+ const form=document.getElementById('brief');
+ const data=new FormData(form);
+ const grouped={};
+ for(const [key,value] of data.entries()){
+  const clean=String(value).trim();
+  if(clean){(grouped[key]??=[]).push(clean);}
+ }
+ return grouped;
+}
+function downloadAnswers(){
+ const grouped=collectAnswers();
+ if(!Object.keys(grouped).length){
+  setDownloadStatus('Пока нет заполненных ответов. Заполните хотя бы одно поле и повторите попытку.');
+  return;
+ }
+ let out='БРИФ НА РАЗРАБОТКУ САЙТА-КАТАЛОГА\n\n';
+ for(const [key,values] of Object.entries(grouped)){
+  out+=key+':\n'+values.map(value=>'• '+value).join('\n')+'\n\n';
+ }
+ const blob=new Blob(['\ufeff'+out],{type:'text/plain;charset=utf-8'});
+ const url=URL.createObjectURL(blob);
+ const link=document.createElement('a');
+ link.href=url;
+ link.download='brief-site-catalog-answers.txt';
+ link.style.display='none';
+ document.body.appendChild(link);
+ link.click();
+ link.remove();
+ // Не отзывать Blob URL синхронно: Safari может не успеть начать загрузку.
+ window.setTimeout(()=>URL.revokeObjectURL(url),30000);
+ setDownloadStatus('Файл с ответами подготовлен. Если загрузка не началась, разрешите загрузки для этого сайта в браузере.');
+}
+function saveAsPDF(){
+ const grouped=collectAnswers();
+ if(!Object.keys(grouped).length){
+  setDownloadStatus('Сначала заполните хотя бы одно поле. Затем нажмите «Сохранить заполненный бриф в PDF».');
+  return;
+ }
+ setDownloadStatus('Открылось системное окно печати. Выберите «Сохранить как PDF» (на Mac — PDF → Сохранить как PDF), затем укажите место сохранения.');
+ window.print();
+}
+</script>
+</body>
+</html>
